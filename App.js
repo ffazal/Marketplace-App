@@ -3,10 +3,15 @@ import React from "react";
 import { StyleSheet, Text, View } from "react-native";
 
 export default function App() {
+  console.log("app executed");
+
+  //let x;
+  //x.toString();
+
   return (
     <View style={styles.container}>
       <Text>Hello react native</Text>
-      <StatusBar style="auto" />
+      <StatusBar stylSe="auto" />
     </View>
   );
 }
