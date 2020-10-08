@@ -1,2 +1,4 @@
-# Marketplace-App
-A React Native App for selling stuff you don't need anymore
+# Marketplace-App (In progress)
+A React Native App where users can buy/sell anything.
+
+
