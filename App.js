@@ -1,35 +1,28 @@
-import { StatusBar } from "expo-status-bar";
 import React from "react";
 import {
+  Dimensions,
   StyleSheet,
-  Text,
-  TouchableWithoutFeedback,
-  TouchableHighlight,
-  TouchableNativeFeedback,
+  StatusBar,
   View,
-  Image,
   SafeAreaView,
-  TouchableOpacity,
   Button,
+  Alert,
+  Platform,
 } from "react-native";
+import { useDimensions } from "@react-native-community/hooks";
+import WelcomeScreen from "./app/screens/WelcomeScreen";
+import ViewImageScreen from "./app/screens/ViewImageScreen";
 
 export default function App() {
-  return (
-    <SafeAreaView style={styles.container}>
-      <Button
-        color="orange"
-        title="Click Me"
-        onPress={() => alert("Button Tapped")}
-      ></Button>
-    </SafeAreaView>
-  );
+  return <ViewImageScreen />;
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#fff",
-    justifyContent: "center",
-    alignItems: "center",
+    paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 0,
+    //justifyContent: "center",
+    //alignItems: "center",
   },
 });
