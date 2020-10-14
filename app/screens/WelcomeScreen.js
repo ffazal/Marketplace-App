@@ -11,7 +11,7 @@ function WelcomeScreen(props) {
     >
       <View style={styles.logoContainer}>
         <Image style={styles.logo} source={require("../assets/logo-red.png")} />
-        <Text Style={styles.tagline}>Sell What You Don't Need</Text>
+        <Text style={styles.tagline}>Sell What You Don't Need</Text>
       </View>
 
       <View style={styles.buttonsContainer}>
@@ -47,8 +47,8 @@ const styles = StyleSheet.create({
 
   tagline: {
     fontSize: 25,
-    fontWeight: "600",
-    paddingVertical: 20,
+    fontWeight: "700",
+    paddingVertical: 15,
   },
 });
 
