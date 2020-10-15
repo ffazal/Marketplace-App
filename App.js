@@ -3,7 +3,7 @@ import { View } from "react-native";
 
 import AppButton from "./app/components/AppButton";
 import WelcomeScreen from "./app/screens/WelcomeScreen";
-import Card from "./app/components/card";
+import Card from "./app/components/Card";
 
 export default function App() {
   return (
