@@ -1,4 +1,3 @@
-// Encapsulating Styles - To keep same text styles acorss all platforms such as iOS, android etc
 import React from "react";
 import { Text, StyleSheet, Platform } from "react-native";
 
