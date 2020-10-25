@@ -3,7 +3,7 @@ import { FlatList, StyleSheet, View } from "react-native";
 
 import Screen from "../components/Screen";
 import ListItem from "../components/ListItem";
-import ListItemSeperator from "../components/ListItemSeperator";
+import ListItemSeparator from "../components/ListItemSeparator";
 import ListItemDeleteAction from "../components/ListItemDeleteAction";
 
 const initialMessages = [
@@ -13,7 +13,6 @@ const initialMessages = [
     description: "D1",
     image: require("../assets/faizan.jpeg"),
   },
-
   {
     id: 2,
     title: "T2",
@@ -41,21 +40,21 @@ function MessagesScreen(props) {
             title={item.title}
             subTitle={item.description}
             image={item.image}
-            onPress={() => console.log("Message Selected", item)}
+            onPress={() => console.log("Message selected", item)}
             renderRightActions={() => (
               <ListItemDeleteAction onPress={() => handleDelete(item)} />
             )}
           />
         )}
-        ItemSeparatorComponent={ListItemSeperator} // Seperate items/messages in a list
+        ItemSeparatorComponent={ListItemSeparator} // Seperate items/messages in a list
         refreshing={refreshing}
         onRefresh={() => {
           setMessages([
             {
-              id: 1,
-              title: "T1",
-              description: "D1",
-              image: require("../assets/faizan.jpeg"),
+              id: 2,
+              title: "T2",
+              description: "D2",
+              image: require("../assets/mosh.jpg"),
             },
           ]);
         }}

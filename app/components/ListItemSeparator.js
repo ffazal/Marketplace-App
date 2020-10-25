@@ -1,19 +1,18 @@
 import React from "react";
-
 import { StyleSheet, View } from "react-native";
 
 import colors from "../config/colors";
 
-function ListItemSeperator() {
-  return <View style={styles.seperator} />;
+function ListItemSeparator() {
+  return <View style={styles.separator} />;
 }
 
-export default ListItemSeperator;
-
 const styles = StyleSheet.create({
-  seperator: {
+  separator: {
     width: "100%",
     height: 1,
     backgroundColor: colors.light,
   },
 });
+
+export default ListItemSeparator;
