@@ -3,13 +3,14 @@ import { View, TextInput, StyleSheet } from 'react-native';
 import {MaterialCommunityIcons} from '@expo/vector-icons';
 
 import colors from "../config/colors";
+import defaultStyles from '../config/styles'
 
 // Under this view component we are using Conditional rendering: we want the icon to be optional so we wanna render this only if icon is defined
 function AppTextInput({icon, ...otherProps}) {
     return (
         <View style={styles.container}>
             {icon && <MaterialCommunityIcons name={icon} size={20} color={colors.medium} style={styles.icon}/>} 
-            <TextInput style={styles.textInput} {...otherProps}/>
+            <TextInput style={defaultStyles.text} {...otherProps}/>
         </View>
     );
 }
@@ -29,12 +30,6 @@ const styles = StyleSheet.create({
         justifyContent: "center", //centers vertically
         alignItems: "center", //centers horizontally
     },
-
-    textInput: {
-        color: colors.dark,
-        fontSize: 18,
-        fontFamily: Platform.OS === "android" ? "Roboto" : "Avenir",
-    }    
-})
+});
 
 export default AppTextInput;
