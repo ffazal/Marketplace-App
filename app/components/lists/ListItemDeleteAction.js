@@ -23,8 +23,11 @@ const styles = StyleSheet.create({
     backgroundColor: colors.danger,
     width: 70,
     justifyContent: "center", //centers vertically
-    alignItems: "center", //centers horizontally
+    alignItems: "center",     //centers horizontally
   },
 });
 
 export default ListItemDeleteAction;
+
+
+
