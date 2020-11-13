@@ -1,7 +1,7 @@
 import React from "react";
 import { useFormikContext } from "formik";
 
-import AppTextInput from "../AppTextInput";
+import TextInput from "../TextInput";
 import ErrorMessage from "./ErrorMessage";
 
 // When you are using more than one components, wrap them into React Fragment
@@ -10,7 +10,7 @@ function AppFormField({ name, width, ...otherProps }) {
 
   return (
     <React.Fragment>
-      <AppTextInput
+      <TextInput
         onBlur={() => setFieldTouched(name)}
         onChangeText={handleChange(name)}
         width={width}
@@ -22,6 +22,3 @@ function AppFormField({ name, width, ...otherProps }) {
 }
 
 export default AppFormField;
-
-
-
