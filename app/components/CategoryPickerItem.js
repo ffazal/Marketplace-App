@@ -21,7 +21,7 @@ function CategoryPickerItem({ item, onPress }) {
 
 const styles = StyleSheet.create({
   container: {
-    paddingHorizontal: 25,
+    paddingHorizontal: 30,
     paddingVertical: 15,
     alignItems: "center",
     width: "33%",
