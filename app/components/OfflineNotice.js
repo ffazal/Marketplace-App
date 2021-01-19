@@ -23,15 +23,18 @@ const styles = StyleSheet.create({
   container: {
     alignItems: "center",
     backgroundColor: colors.primary,
-    height: 50,
+    height: 80,
     justifyContent: "center",
-    position: "absolute",
+    position: "relative",
     top: Constants.statusBarHeight,
     width: "100%",
     zIndex: 1,
   },
   text: {
     color: colors.white,
+    flex: 1,
+    padding: 16,
+    fontSize: 18,
   },
 });
 
